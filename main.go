@@ -16,7 +16,7 @@ func main() {
 	// Comment Routes
 	r.POST("/comments", controllers.CreateComment)
 	r.GET("/comments", controllers.GetComments)
-	r.DELETE("/comments", controllers.DeleteComment)
+	r.DELETE("/delete/comments", controllers.DeleteComment)
 
 	// Post Routes
 	r.POST("/fetch-comments", controllers.FetchAndSavePosts)
