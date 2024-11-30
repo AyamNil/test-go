@@ -26,3 +26,15 @@ This API allows users to fetch, create, and delete comments. Below is the detail
     "title": "TEST Post",
     "body": "This is Post API testing"
   },
+
+### 3. **Get All Comment**
+- **Endpoint:** `/comments`
+- **Method:** `GET`
+- **Description:** Get All comment.
+
+### 4. **delete Comment**
+- **Endpoint:** `/delete/comments?id`
+- **Method:** `DELETE`
+- **Description:** Get All comment.
+
+
