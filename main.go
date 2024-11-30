@@ -13,11 +13,14 @@ func main() {
 	// Set up the router
 	r := gin.Default()
 
-	// Routes
+	// Comment Routes
 	r.POST("/comments", controllers.CreateComment)
 	r.GET("/comments", controllers.GetComments)
-	r.DELETE("/comments/:id", controllers.DeleteComment)
+	r.DELETE("/comments", controllers.DeleteComment)
+
+	// Post Routes
+	r.POST("/fetch-comments", controllers.FetchAndSavePosts)
 
 	// Start the server
-	r.Run(":8080")
+	r.Run(":8081")
 }
